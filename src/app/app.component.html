@@ -1,1 +1,29 @@
-<router-outlet></router-outlet>
+<mat-drawer-container class="full-height" hasBackdrop>
+  <mat-drawer #drawer mode="over">
+    <mat-list>
+      <h2 class="text-right">
+        <button mat-button (click)="drawer.toggle()">
+          <mat-icon aria-hidden="false" aria-label="menu icon" class="right">menu_open</mat-icon>
+        </button>
+      </h2>
+      <mat-divider></mat-divider>
+      <mat-list-item> Pepper </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item> Salt </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item> Paprika </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+    
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <button mat-button (click)="drawer.toggle()">
+        <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
+      </button>
+      <div class="brand"><img src="./assets/images/cards.png" alt="cards poker logo" class="logo"/>Planning Poker</div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+    <!-- <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button> -->
+  </mat-drawer-content>
+</mat-drawer-container>
