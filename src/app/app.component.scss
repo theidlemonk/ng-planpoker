@@ -1,0 +1,36 @@
+.full-height {
+  height: 100%;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.brand {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-left: -62px; 
+  font-size: 2em;
+}
+
+mat-icon {
+  margin-right: 2%;
+}
+
+.mat-drawer {
+  width: 20%;
+}
+
+.mat-toolbar {
+  margin-bottom: 2%;
+  box-shadow: 0 2px 2px rgba(4, 4, 4, 0.22), 0 0 2px rgba(2, 2, 2, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+img {
+  &.logo {
+    height: 50px;
+  }
+}

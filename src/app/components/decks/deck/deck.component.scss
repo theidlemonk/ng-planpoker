@@ -1,0 +1,17 @@
+.deck {
+  width: 20rem;
+  height: 26em;
+  background-image: url(/assets/images/card-back-cover.jpg);
+  background-size: cover;
+
+  .mat-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  // .mat-card-title {
+  //   max-width: 50%;
+  // }
+}

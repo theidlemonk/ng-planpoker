@@ -1,0 +1,9 @@
+<mat-grid-list cols="3">
+  <mat-grid-tile *ngFor="let deck of decks; let i = index">
+    <app-deck [deck]="deck"></app-deck>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<!-- <app-course-item *ngFor="let courseEl of courses | orderBy: 'name' | filter:searchResult; let i = index" -->
+<!-- (mouseover)="setHoveredRow(i)" [class.active]="i == selectedRow" [abc]="courseEl" [index]="i" -->
+<!-- (valueChange)="displayCourse($event)"></app-course-item> -->
